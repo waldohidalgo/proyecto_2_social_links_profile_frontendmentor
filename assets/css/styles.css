@@ -1,0 +1,92 @@
+@font-face {
+  font-family: inter;
+  src: url("./fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+}
+:root {
+  --font-global: inter, "sans-serif";
+  --color-primary: hsl(75, 94%, 57%);
+  --color-blanco: hsl(0, 0%, 100%);
+  --color-grey: hsl(0, 0%, 20%);
+  --color-dark-grey: hsl(0, 0%, 12%);
+  --color-off-black: hsl(0, 0%, 8%);
+}
+html {
+  font-size: 14px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--color-off-black);
+  font-family: var(--font-global);
+}
+
+.card {
+  padding: 3rem 2rem;
+  background-color: var(--color-dark-grey);
+  width: 90%;
+  display: block;
+  max-width: 350px;
+  margin: auto;
+  margin-block: 10rem;
+  text-align: center;
+  border-radius: 15px;
+  .image_profile {
+    border-radius: 50%;
+    width: 75px;
+  }
+  .nombre {
+    color: var(--color-blanco);
+    font-size: 1.5rem;
+  }
+  .location {
+    color: var(--color-primary);
+    font-size: 0.9rem;
+  }
+  .description {
+    color: #eee;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .contenedor_redes_botones {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    button {
+      background-color: var(--color-grey);
+      padding-block: 1rem;
+      border: none;
+      border-radius: 5px;
+      color: var(--color-blanco);
+      font-weight: 600;
+    }
+    button:hover {
+      background-color: var(--color-primary);
+      color: var(--color-dark-grey);
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    button:active {
+      background-color: var(--color-primary);
+      color: var(--color-dark-grey);
+      cursor: pointer;
+      font-weight: 600;
+    }
+  }
+}
+
+footer {
+  color: white;
+  text-align: center;
+  .attribution {
+    p:nth-child(1) a {
+      color: lightblue;
+    }
+    p:nth-child(2) a {
+      color: yellow;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  }
+}
