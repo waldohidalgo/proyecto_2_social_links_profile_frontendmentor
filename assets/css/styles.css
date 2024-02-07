@@ -48,45 +48,45 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-  .contenedor_redes_botones {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 1rem;
-    button {
-      background-color: var(--color-grey);
-      padding-block: 1rem;
-      border: none;
-      border-radius: 5px;
-      color: var(--color-blanco);
-      font-weight: 600;
-    }
-    button:hover {
-      background-color: var(--color-primary);
-      color: var(--color-dark-grey);
-      cursor: pointer;
-      font-weight: 600;
-    }
+}
+.contenedor_redes_botones {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+  button {
+    background-color: var(--color-grey);
+    padding-block: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: var(--color-blanco);
+    font-weight: 600;
+  }
+  button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-dark-grey);
+    cursor: pointer;
+    font-weight: 600;
+  }
 
-    button:active {
-      background-color: var(--color-primary);
-      color: var(--color-dark-grey);
-      cursor: pointer;
-      font-weight: 600;
-    }
+  button:active {
+    background-color: var(--color-primary);
+    color: var(--color-dark-grey);
+    cursor: pointer;
+    font-weight: 600;
   }
 }
 
 footer {
   color: white;
   text-align: center;
-  .attribution {
-    p:nth-child(1) a {
-      color: lightblue;
-    }
-    p:nth-child(2) a {
-      color: yellow;
-      font-size: 1.25rem;
-      font-weight: bold;
-    }
+}
+.attribution {
+  p:nth-child(1) a {
+    color: lightblue;
+  }
+  p:nth-child(2) a {
+    color: yellow;
+    font-size: 1.25rem;
+    font-weight: bold;
   }
 }
